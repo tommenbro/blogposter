@@ -27,12 +27,13 @@ const Layout: React.FC<Props> = (props) => (
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
           Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
           "Segoe UI Symbol";
-        background: rgba(0, 0, 0, 0.05);
+        background: #001219;
       }
 
       input,
       textarea {
         font-size: 16px;
+        background: #005f73;
       }
 
       button {

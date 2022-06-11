@@ -24,12 +24,12 @@ const Header: React.FC = () => {
 
         a {
           text-decoration: none;
-          color: var(--geist-foreground);
+          color: #0a9396;
           display: inline-block;
         }
 
         .left a[data-active="true"] {
-          color: gray;
+          color: #0a9396;
         }
 
         a + a {
@@ -56,12 +56,12 @@ const Header: React.FC = () => {
 
           a {
             text-decoration: none;
-            color: var(--geist-foreground);
+            color: #0a9396;
             display: inline-block;
           }
 
           .left a[data-active="true"] {
-            color: gray;
+            color: #0a9396;
           }
 
           a + a {
@@ -92,7 +92,7 @@ const Header: React.FC = () => {
           {`
             a {
               text-decoration: none;
-              color: var(--geist-foreground);
+              color: #0a9396;
               display: inline-block;
             }
 
@@ -124,7 +124,9 @@ const Header: React.FC = () => {
           </a>
         </Link>
         <Link href="/drafts">
-          <a data-active={isActive("/drafts")}>My Drafts</a>
+          <a className="bold" data-active={isActive("/drafts")}>
+            My Drafts
+          </a>
         </Link>
         <style jsx>{`
           .bold {
@@ -133,12 +135,12 @@ const Header: React.FC = () => {
 
           a {
             text-decoration: none;
-            color: var(--geist-foreground);
+            color: #0a9396;
             display: inline-block;
           }
 
           .left a[data-active="true"] {
-            color: gray;
+            color: #94d2bd;
           }
 
           a + a {
@@ -164,7 +166,8 @@ const Header: React.FC = () => {
           {`
             a {
               text-decoration: none;
-              color: var(--geist-foreground);
+              color: #001219;
+              background: #0a9396;
               display: inline-block;
             }
 
