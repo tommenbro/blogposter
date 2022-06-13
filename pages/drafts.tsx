@@ -47,7 +47,7 @@ const Drafts: React.FC<Props> = (props) => {
   return (
     <Layout>
       <div className="page">
-        <h1>My Drafts</h1>
+        <h1 className="title">My Drafts</h1>
         <main>
           {props.drafts.map((post) => (
             <div key={post.id} className="post">
@@ -58,8 +58,10 @@ const Drafts: React.FC<Props> = (props) => {
       </div>
       <style jsx>{`
         .post {
-          background: var(--geist-background);
+          background: #e9d8a6;
           transition: box-shadow 0.1s ease-in;
+          color: #001219;
+          border-radius: 5px;
         }
 
         .post:hover {
@@ -68,6 +70,12 @@ const Drafts: React.FC<Props> = (props) => {
 
         .post + .post {
           margin-top: 2rem;
+        }
+
+        .title {
+          color: #e9d8a6;
+          padding: 1rem;
+          border-bottom: 1px solid #e9d8a6;
         }
       `}</style>
     </Layout>

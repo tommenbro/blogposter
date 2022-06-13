@@ -92,8 +92,14 @@ const Header: React.FC = () => {
           {`
             a {
               text-decoration: none;
-              color: #0a9396;
+              color: #e9d8a6;
               display: inline-block;
+              background: #005f73;
+              font-weight: bold;
+            }
+
+            a:hover {
+              background: #0a9396;
             }
 
             a + a {
@@ -106,8 +112,8 @@ const Header: React.FC = () => {
 
             .right a {
               border: 1px solid var(--geist-foreground);
-              padding: 0.5rem 1rem;
-              border-radius: 3px;
+              padding: 0.75rem 1rem;
+              border-radius: 5px;
             }
           `}
         </style>
@@ -135,12 +141,16 @@ const Header: React.FC = () => {
 
           a {
             text-decoration: none;
-            color: #0a9396;
+            color: #005f73;
             display: inline-block;
           }
 
+          a:hover {
+            color: #0a9396;
+          }
+
           .left a[data-active="true"] {
-            color: #94d2bd;
+            color: #e9d8a6;
           }
 
           a + a {
@@ -166,15 +176,22 @@ const Header: React.FC = () => {
           {`
             a {
               text-decoration: none;
-              color: #001219;
-              background: #0a9396;
+              color: #e9d8a6;
+              background: #005f73;
               display: inline-block;
+              font-weight: bold;
+            }
+
+            a:hover {
+              background: #0a9396;
             }
 
             p {
               display: inline-block;
               padding-right: 1rem;
               font-size: 13px;
+              background: #001219;
+              color: #e9d8a6;
             }
 
             a + a {
@@ -186,13 +203,14 @@ const Header: React.FC = () => {
             }
 
             .right a {
-              border: 1px solid var(--geist-foreground);
-              padding: 0.5rem 1rem;
-              border-radius: 3px;
+              border: 1px solid #;
+              padding: 0.75rem 1rem;
+              border-radius: 5px;
             }
 
             button {
               border: none;
+              background: #001219;
             }
           `}
         </style>

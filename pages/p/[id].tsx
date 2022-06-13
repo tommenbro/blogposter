@@ -53,32 +53,63 @@ const Post: React.FC<PostProps> = (props) => {
 
   return (
     <Layout>
-      <div>
+      <div className="textcolor">
         <h2>{title}</h2>
-        <p>By {props?.author?.name || "Unknown author"}</p>
+        <small>Written by {props?.author?.name || "Unknown author"}</small>
         <ReactMarkdown children={props.content} />
         {!props.published && userHasValidSession && postBelongsToUser && (
-          <button onClick={() => publishPost(props.id)}>Publish</button>
+          <button className="publish" onClick={() => publishPost(props.id)}>
+            Publish
+          </button>
         )}
         {userHasValidSession && postBelongsToUser && (
-          <button onClick={() => deletePost(props.id)}>Delete</button>
+          <button className="delete" onClick={() => deletePost(props.id)}>
+            Delete
+          </button>
         )}
       </div>
       <style jsx>{`
         .page {
-          background: var(--geist-background);
+          background: #005f73;
           padding: 2rem;
+          color: #001219;
+        }
+
+        .textcolor {
+          text-color: #001219;
+          background: #e9d8a6;
+          padding: 2rem;
+          border-radius: 5px;
         }
 
         .actions {
           margin-top: 2rem;
         }
 
+        .publish {
+          background: #005f73;
+          color: #e9d8a6;
+        }
+
+        .delete {
+          background: #ae2012;
+          color: #e9d8a6;
+        }
+
+        .delete:hover {
+          background: #bb3e03;
+        }
+
         button {
-          background: #ececec;
           border: 0;
-          border-radius: 0.125rem;
           padding: 1rem 2rem;
+          font-weight: bold;
+          margin-top: 5rem;
+          border-radius: 3px;
+        }
+
+        .publish:hover {
+          background: #0a9396;
         }
 
         button + button {

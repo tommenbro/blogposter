@@ -26,7 +26,7 @@ const Draft: React.FC = () => {
     <Layout>
       <div>
         <form onSubmit={submitData}>
-          <h1>New Draft</h1>
+          <h1 className="title">New Draft</h1>
           <input
             autofocus
             onChange={(e) => setTitle(e.target.value)}
@@ -50,11 +50,12 @@ const Draft: React.FC = () => {
       <style jsx>
         {`
           .page {
-            background: var(--geist-background);
+            background: #e9d8a6;
             padding: 3rem;
             display: flex;
             justify-content: center;
             align-items: center;
+            color: #001219;
           }
 
           input[type="text"],
@@ -64,16 +65,33 @@ const Draft: React.FC = () => {
             margin: 0.5rem 0;
             border-radius: 0.25rem;
             border: 0.125rem solid rgba(0, 0, 0, 0.2);
+            font-weight: bold;
+            color: #001219;
           }
 
           input[type="submit"] {
-            background: #ececec;
+            background: #005f73;
+            color: #e9d8a6;
             border: 0;
             padding: 1rem 2rem;
+            font-weight: bold;
+            border-radius: 0.25rem;
+          }
+
+          input[type="submit"]:hover {
+            background: #0a9396;
+            cursor: pointer;
           }
 
           .back {
             margin-left: 1rem;
+            color: #0a9396;
+          }
+
+          .title {
+            color: #e9d8a6;
+            padding: 1rem;
+            border-bottom: 1px solid #e9d8a6;
           }
         `}
       </style>
