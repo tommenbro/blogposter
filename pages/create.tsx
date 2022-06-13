@@ -28,7 +28,6 @@ const Draft: React.FC = () => {
         <form onSubmit={submitData}>
           <h1 className="title">New Draft</h1>
           <input
-            autofocus
             onChange={(e) => setTitle(e.target.value)}
             placeholder="Title"
             type="text"
