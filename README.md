@@ -1,4 +1,4 @@
-# Fullstack Blogpost app with Next.js and OAuth
+# Fullstack Blogpost app with Next.js, Prisma and OAuth
 
 npm i
 npm run dev
