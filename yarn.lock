@@ -482,10 +482,10 @@
   "resolved" "https://registry.npmjs.org/nanoid/-/nanoid-3.2.0.tgz"
   "version" "3.2.0"
 
-"next-auth@^4.0.1", "next-auth@^4.4.0":
-  "integrity" "sha512-Lz5ytnkP4OfTUsknhpZVH9eTLaLOZX/UEe6OQESMaZSTBr9cVc99G4kEPG83KrwKMe7VVb5DfDWH0rlod7wMzA=="
-  "resolved" "https://registry.npmjs.org/next-auth/-/next-auth-4.4.0.tgz"
-  "version" "4.4.0"
+"next-auth@^4.0.1", "next-auth@^4.5.0":
+  "integrity" "sha512-B6gYRIbqtj8nlDsx3y2Ruwp/mvZnItPs7VUULY43QYw+M9xtDPIM9EBZ3ryd/wNYA3MDteBJlzGm/ivseXcmJA=="
+  "resolved" "https://registry.npmjs.org/next-auth/-/next-auth-4.5.0.tgz"
+  "version" "4.5.0"
   dependencies:
     "@babel/runtime" "^7.16.3"
     "@panva/hkdf" "^1.0.1"
@@ -497,7 +497,7 @@
     "preact-render-to-string" "^5.1.19"
     "uuid" "^8.3.2"
 
-"next@12.0.10":
+"next@^12.0.10":
   "integrity" "sha512-1y3PpGzpb/EZzz1jgne+JfZXKAVJUjYXwxzrADf/LWN+8yi9o79vMLXpW3mevvCHkEF2sBnIdjzNn16TJrINUw=="
   "resolved" "https://registry.npmjs.org/next/-/next-12.0.10.tgz"
   "version" "12.0.10"
